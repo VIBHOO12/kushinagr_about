@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="event.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Events and Festivals in Kushinagar</h1>
-    </header>
+    </header> -->
+    <div id="navbarContainer"></div>
 
+<div class="header">
+    <h1>Events and Festivals in Kushinagar</h1>
+
+</div>
     <main>
         <section class="event">
             <img src="banner.jpg" alt="Buddha Purnima">
@@ -52,5 +57,18 @@
 
 
     </main>
+    
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+  <script>
+    // Load navbar dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbarContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching navbar:', error));
+</script>
 </body>
 </html>

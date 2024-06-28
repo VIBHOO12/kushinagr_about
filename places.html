@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="places.css">
 </head>
 <body>
-    <header>
+
+    <div id="navbarContainer" ></div>
+    <!-- <header>
         <h1>Places to Visit in Kushinagar</h1>
-    </header>
+    </header> -->
+    <div class="header">
+        <h1>Places to Visit in Kushinagar</h1>
+
+    </div>
 
     <main>
         <section class="place">
@@ -90,6 +96,18 @@
 
     </main>
 
-   
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load navbar dynamically
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navbar:', error));
+    </script>
 </body>
 </html>

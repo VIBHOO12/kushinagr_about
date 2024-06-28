@@ -4,30 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar-object {
-    width: 100%; /* Adjust width as needed */
-    height: 60px; /* Adjust height as needed */
-    border: none;
-    /* padding: 30px 0; Remove default border */
-}
 
+/* .navbar{
+    padding: 30px 0;
+} */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-header {
+.header {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
+    background-attachment: fixed;
     
 
 }
 
-header h1 {
+.header h1 {
     font-size: 2.5em;
-    color: #333;
+    /* color: #333; */
 }
 
 main {
@@ -78,4 +77,9 @@ main {
 
 .place-info a:hover {
     background-color: #0056b3;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
 }

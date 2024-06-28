@@ -57,7 +57,20 @@
     <img src="sleeping statue.jpg" alt="">
 </div>
 </section>
+<footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+<div id="navbarContainer"></div>
 
+  <script>
+    // Load navbar dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbarContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching navbar:', error));
+</script>
     
 </body>
 </html>
